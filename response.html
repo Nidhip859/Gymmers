@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<!-- Abhishek Gupta -->
+<head>
+    <meta charset="UTF-8">
+    <title>Gymers Contact Us</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/contactus.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="icon" href="img/icon.png">
+    <script>
+        $(document).ready(function () {
+            var name = sessionStorage.getItem('name');
+            var subject = sessionStorage.getItem('subject');
+            var phone = sessionStorage.getItem('phone');
+            var email = sessionStorage.getItem('email');
+            var message = sessionStorage.getItem('message');
+            //display date from session storage here
+            $("#name").text(name);
+            $("#subject").text(subject);
+            $("#phone").text(phone);
+            $("#email").text(email);
+            $("#message").text(message);
+
+            $("#back").click(function () {
+                // Use of the history object here 
+                history.back();
+            }); // end of click()
+        }); // end of ready()
+    </script>
+</head>
+
+<body>
+    <div class="center">
+        <h2>Thanks for Contacting us</h2>
+        <main class="profile">
+            <label>Name:</label>
+            <span id="name">&nbsp;</span><br>
+            <label>Subject:</label>
+            <span id="subject">&nbsp;</span><br>
+            <label>Phone:</label>
+            <span id="phone">&nbsp;</span><br>
+            <label>Email:</label>
+            <span id="email">&nbsp;</span><br>
+            <label>Message:</label>
+            <span id="message">&nbsp;</span><br>
+            <input type="button" id="back" value="Back">
+        </main>
+    </div>
+</body>
+
+</html>

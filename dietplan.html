@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<!-- Brinda Patel -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/dietplan.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	<script src="js/main.js"></script>
+	<script src="js/dietplan.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/icon.png">
+
+	<title>Gymers About Us</title>
+</head>
+
+<body>
+	<header class="menuContainer">
+		<nav id="myTopnav">
+			<h1><a href="index.html">Gymers</a></h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="dietplan.html">Diet Plan</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars fa-3x"></i>
+			</a>
+		</nav>
+	</header>
+	<main>
+		<div class="banner-image">
+			<img class="image" src="img/portrait-woman.jpg" width="100%" />
+				<!-- all slider images are from freepick  https://www.freepik.com/-->
+
+		</div>
+		<div class="jumbotron">
+			<h2>Check Your Diet Plan Here</h2>
+		</div>
+		<div class="center">
+			<div class="button">
+				<button class="btn" onclick=vegetarian();>
+					Vegetarian
+					<!-- https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chart-lowcarb-veg-v4-1555081234.jpg?resize=480:* -->
+				</button>
+				<button class="btn" onclick=nonVegetarian();>
+					Non Vegetarian
+				</button>
+			</div>
+		</div>
+		<img id="myImage" src="img/chart-lowcarb-veg.jpg">
+
+
+		<!-- FAQ -->
+		<div class="jumbotron">
+			<h2>FAQ</h2>
+		</div>
+		<div id="wrapperFaq">
+
+			<P class="headerFaq" onclick="popupFaq();">Can I pay by cash for my membership?<span>+</span> </P>
+			<P class="main-text">We don't have a cash option. We have embraced innovative technology and don't have a
+				reception desk at the entrance to our gym. All payments must be made automatically online or at the
+				kiosks in reception, using your bank/credit card.</p>
+
+			<P class="headerFaq" onclick="popupFaq();">Do I need to book a slot for the gym? (COVID-19
+				Related)<span>+</span> </P>
+			<P class="main-text">Yes. Gym slots of 75 minutes must be booked on our class timetable. There will be a
+				15-minute turn over time in between gym time slots in order to give everyone enough time to leave the
+				club and for the team to clean and sanitise the equipment ready for the next time slot. Slots can be
+				booked up to 3 days before at 9pm. For example, to book a slot on Monday the 20th of July, you can book
+				from 9pm on Friday the 17th of July. This booking system will be strictly enforced and if you have not
+				booked a slot for the specific time you wish to come to the gym, you will not be granted access to the
+				gym.</p>
+
+			<P class="headerFaq" onclick="popupFaq();">Can I cancel the gym time slot I have booked?<span>+</span> </P>
+			<P class="main-text">Yes, gym time slots can be cancelled up to 2 hours before their start time. If you
+				don't cancel your gym time slots, and miss 3 or more within a 30 day period, a booking block will be
+				placed on your account for 3 days. </p>
+
+			<P class="headerFaq" onclick="popupFaq();">What safety/sanitisation measures have you introduced in relation
+				to COVID-19? (COVID-19 Related) <span>+</span> </P>
+			<P class="main-text">our member's health and safety is our number one priority. We have introduced numerous
+				new safety precautions. These include every staff member and instructor having their temperature checked
+				and recorded in our staff safety log before their shift, and staff will be required to wear masks and
+				gloves during their shift. We have also installed multiple hand sanitising stations around the club,
+				including 2 motion-activated hand sanatisers which are located as soon as you enter the gym. We have
+				also invested in an electrostatic disinfectant distributor. The new disinfectant allows us to spray more
+				evenly, gets hard-to-reach crevices, clings to every surface it coats, and is proven to kill viruses
+				like COVID-19. Staff will use this on surfaces in all common areas every day, with special attention to
+				bikes, weights, machines, and all high-touch surfaces each day. </p>
+
+			<P class="headerFaq" onclick="popupFaq();">I have a health issue, can i still exercise?<span>+</span> </P>
+			<P class="main-text">Yes, but it will depend on your condition and medical clearance may need to be provided
+				by your doctor. We have specialised staff that can help you and members are regularly referred to us by
+				their doctor. If you have a specific medical issue, please email the details in confidence to
+				support@gymers.com. and attach a copy of your doctor/physio clearance letter to this email./p>
+		</div>
+	</main>
+
+	<!-- footer -->
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<h1 id="brand">
+				<a>Gymers</a>
+				<span id="tool" class="tooltip_text">Our Gym is Great.</span>
+			</h1>
+
+			<p class="footer-links">
+				<a href="#">Home</a>
+				|
+				<a href="dietplan.html">Diet Plan</a>
+				|
+				<a href="contact.html">Contact</a>
+			</p>
+
+			<p class="footer-company-name"> &copy;Gymers Corp</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>250 Lester ST.</span>
+					N2L N3W</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+1 777-777-7777</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:support@gymers.com">support@gymers.com</a></p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>what we do in this world</span>
+				We want to help you live a fit and healthy lifestyle! We do this by helping you find the most suitable
+				diet plan
+				for your home gym schedule, studio or commercial gym, keeping your budget, lifestyle and fitness goals
+				in mind.
+				We stock a wide range of gym equipment also professe, with strength equipment, cardio, cross training
+				and so much
+				more.
+				Our awesome team is always keen to help, so please call us to discuss your needs.</p>
+		</div>
+		<div class="center">
+			<p>Copyright © 2021 All rights reserved.</P>
+		</div>
+	</footer>
+
+	<noscript> Sorry...JavaScript is needed to go ahead. </noscript>
+</body>
+
+</html>
